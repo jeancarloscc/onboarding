@@ -27,15 +27,51 @@ hotfix-50-erro-validacao-formulario
 
 ## Padrão de mensagens de commits
 
-A mensagem de commit deve seguir a seguinte regra: \
-`#[número da issue] - [mensagem de commit]`
+A mensagem de commit deve seguir o padrão **Conventional Commits**, amplamente adotado por equipes profissionais.
 
-Exemplos de mensagem de commits numa branch para realizar a issue 42:
+Formato recomendado:
 
 ```
-#42 - Criação da tela de login
-#42 - Inclusão do botão de recuperação de senha
-#42 - Alteração da lógica de checagem de email válido
+tipo: descrição curta no imperativo
+```
+
+Tipos mais usados:
+
+- `feat`: adiciona uma nova funcionalidade.
+- `fix`: corrige um bug.
+- `docs`: altera documentação (sem mudar código).
+- `test`: cria ou ajusta testes (sem mudar regra de negócio).
+- `build`: altera build ou dependências.
+- `perf`: melhora performance.
+- `style`: ajusta formatação/lint (sem mudar comportamento).
+- `refactor`: reorganiza código sem alterar funcionalidade.
+- `chore`: tarefa de manutenção/configuração.
+- `ci`: altera pipeline de integração contínua.
+- `raw`: altera arquivos brutos de configuração/dados/parâmetros.
+- `cleanup`: limpa código desnecessário.
+- `remove`: remove arquivos, código ou funcionalidades obsoletas.
+
+Boas práticas:
+
+- Use descrição curta, clara e objetiva.
+- Prefira um commit por mudança lógica.
+- Evite mensagens genéricas como "ajustes" ou "update".
+
+Exemplos de commits:
+
+```
+feat: cria tela de login
+fix: corrige validação de e-mail
+docs: atualiza instruções de execução
+refactor: simplifica tratamento de erros
+test: adiciona testes para cadastro
+chore: atualiza dependências do projeto
+ci: ajusta pipeline de integração contínua
+build: atualiza configuração de build
+perf: otimiza consulta de dados
+style: aplica padronização de lint e formatação
+cleanup: remove código comentado
+remove: exclui módulo legado descontinuado
 ```
 ---
 
@@ -56,16 +92,16 @@ Use o padrão:
 
 - Faça um resumo do que foi entregue.
 
-### Vinculação da Issue
+### Vinculação com o Trello
 
-- Ao abrir um Pull Request, utilize o campo **Development**, disponível na própria tela de criação/edição do PR.
-- Nesse campo, associe a issue relacionada à sua entrega.
-- Quando o vínculo é feito corretamente, ao mergear o PR, a issue vinculada será encerrada automaticamente.
+- Adicione no PR o link do cartão correspondente no Trello.
+- No cartão do Trello, inclua o link do PR para facilitar o acompanhamento.
+- Atualize a lista do cartão conforme o andamento: **In Review** durante a revisão e **Concluído** após o merge.
 ---
 
 ### Processo de revisão
 
 - Recomenda-se que todo Pull Request seja revisado por pelo menos 1 membro da equipe antes do merge.
 - Ao receber comentários ou solicitações de correção, responda e/ou atualize o PR, se necessário.
-- Essa etapa de revisão contribui para a qualidade do código, compartilhamento de conhecimento e padronização do projeto.
+- Essa etapa contribui para a qualidade do código, compartilhamento de conhecimento e padronização do projeto.
 - No entanto, **a adoção desse processo fica a critério da liderança da equipe**, que pode definir se haverá (ou não) a etapa de revisão no projeto.
