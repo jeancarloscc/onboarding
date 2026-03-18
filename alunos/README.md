@@ -8,14 +8,30 @@ Este manual reúne orientações para apoiar sua atuação no time, com foco em 
 
 ## Fluxo de Trabalho
 
-Resumo das principais etapas do fluxo de trabalho esperado de um aluno ou membro da equipe, desde o acompanhamento do board até a entrega das tarefas.
+O fluxo de trabalho está centrado no desenvolvimento das entregas e no gerenciamento contínuo do quadro Kanban da equipe no Trello.
 
-<img width="400" alt="dia-dia-alunos" src="https://github.com/user-attachments/assets/d8235681-6114-4879-b4d0-fb6197af23e6" />
+Etapas recomendadas:
+
+1. **Planejar e puxar atividade (A Fazer)**
+	- Revise os cartões priorizados na lista **A Fazer** do Trello.
+	- Confirme escopo, critérios de aceite e dependências antes de iniciar.
+
+2. **Executar desenvolvimento (Em Andamento)**
+	- Crie sua branch e desenvolva em pequenos incrementos.
+	- Atualize o cartão no Trello com progresso, checklist e impedimentos.
+
+3. **Validar e submeter (Revisão)**
+	- Abra PR vinculado ao cartão/tarefa com descrição objetiva da entrega.
+	- Solicite revisão e aplique os ajustes solicitados.
+
+4. **Concluir e acompanhar (Concluído)**
+	- Após aprovação/merge, mova o cartão para **Concluído** no Trello.
+	- Registre aprendizados ou observações relevantes no cartão.
 
 ## Estrutura do Manual
 
 - [`ambientacao-git.md`](./ambientacao-git.md) → Ambientação técnica 
-- [`fluxo-github-projects.md`](./fluxo-github-projects.md) → Organização de Atividades
+- [`fluxo-github-projects.md`](./fluxo-github-projects.md) → Organização de Atividades no Kanban
 - [`gitflow-e-padroes.md`](./gitflow-e-padroes.md) → GitFlow e Versionamento
 - [`boas-praticas-alunos.md`](./boas-praticas-alunos.md) → Boas práticas e recomendações
   
